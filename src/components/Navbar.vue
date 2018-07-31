@@ -50,7 +50,7 @@ export default{
                 {title:'Register',icon:'face',url:'/register'},
                 {title:'Cart',icon:'shopping_cart',url:'/checkout'},
                 {title:'New Product',icon:'add',url:'/new'},
-                {title:'My Products',icon:'account_box',url:'/login'},
+                {title:'My Products',icon:'account_box',url:'/list'},
                 ]
         }
     }
