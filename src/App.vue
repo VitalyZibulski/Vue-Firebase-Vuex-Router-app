@@ -1,9 +1,15 @@
 <template>
-  <h1>Vue</h1>
+  <v-app>
+      <Navbar />
+  </v-app>
 </template>
 
 <script>
-export default {
+    import Navbar from './components/Navbar.vue'
+      export default{
+          components: {
+              Navbar
+          }
+      }
 
-}
 </script>
