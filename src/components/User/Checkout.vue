@@ -4,8 +4,7 @@
             <v-flex xs12 sm6 offset-sm3>
             <h1 class="text-secondary mb3">Orders</h1>
             <v-list subheader two-line>
-
-                      <v-list-tile
+                    <v-list-tile
                       avatar
                       v-for="(order,i) in orders"
                       :key="i"
@@ -17,8 +16,7 @@
                             @change="markDone(order)"
                           ></v-checkbox>
                         </v-list-tile-action>
-
-                        <v-list-tile-content>
+                          <v-list-tile-content>
                           <v-list-tile-title>{{order.name}}</v-list-tile-title>
                           <v-list-tile-sub-title>{{order.phone}}</v-list-tile-sub-title>
                         </v-list-tile-content>
@@ -29,7 +27,6 @@
                             >Open</v-btn>
                         </v-list-tile-action>
                       </v-list-tile>
-
                 </v-list>
             </v-flex>
         </v-layout>
@@ -47,7 +44,6 @@
                         phone:'22-22-22',
                         poductId:'1',
                         done:false
-
                     }
                 ]
             }
