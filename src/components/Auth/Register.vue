@@ -40,7 +40,8 @@
                     <v-spacer></v-spacer>
                     <v-btn color="primary"
                     @click="onSubmit"
-                    :disabled="!valid"
+                    :loading="loading"
+                    :disabled="!valid || loading"
                     >Create</v-btn>
                   </v-card-actions>
                 </v-card>
@@ -69,6 +70,11 @@
                     v => !!v || 'Confirm password is required',
                     v => v === this.password || 'Password should match'
                 ]
+            }
+        },
+        computed:{
+            loading(){
+                return this.$store.getters.loading
             }
         },
         methods:{
