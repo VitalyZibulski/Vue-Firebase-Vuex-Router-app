@@ -1,5 +1,6 @@
 # onlinestore
     use Firebase
+    use Vue
 
 > A Vue.js project
 
